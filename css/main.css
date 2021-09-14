@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin sans', -apple-system, BlinkMacSystemFont, 'Poppins', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #FFF;
+  color: #707070;
+  position: relative;
+}
+
+a, a:visited {
+  display: block;
+  text-decoration: none;
+  color: #707070;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-width: 2px;
+  border-style: solid;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 3px;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, border-color;
+  transition-property: background-color, box-shadow, border-color, -webkit-box-shadow;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.btn-red {
+  background-color: #ED1E24;
+  border-color: #ED1E24;
+  color: #FFF !important;
+}
+
+.btn-red:hover {
+  -webkit-box-shadow: 0 2px 3px rgba(237, 30, 36, 0.2);
+          box-shadow: 0 2px 3px rgba(237, 30, 36, 0.2);
+  border-color: #e41218;
+  background-color: #e41218;
+}
+
+.btn-outline-red {
+  background-color: transparent;
+  color: #ED1E24 !important;
+  border-color: #ED1E24;
+}
+
+.btn-outline-red:hover {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: .8rem;
+  color: #707070;
+}
+
+.sub-title {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar {
+  width: 100%;
+  padding: .200rem 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .logo img {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+.navbar .navbar-group .navbar-link {
+  font-size: 1.1rem;
+  color: #707070;
+  padding: .3rem .9rem;
+  font-weight: 600;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.navbar .navbar-group .navbar-link:hover {
+  color: #ED1E24;
+}
+
+.navbar .navbar-group .navbar-link-btn {
+  font-size: 1.1rem;
+}
+
+.navbar .ham-menu {
+  display: none;
+}
+
+.navbar .ham-menu img {
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.hero .hero-line {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .logo img {
+    display: block;
+    width: 200px;
+  }
+  .navbar .navbar-group {
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    background-color: #FFF;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    visibility: hidden;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+    padding: 1rem 2rem 2rem 2rem;
+    z-index: 9999;
+  }
+  .navbar .navbar-group .navbar-link {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  .navbar .navbar-group span {
+    display: none !important;
+  }
+  .navbar .navbar-group.active {
+    visibility: visible;
+  }
+  .navbar .ham-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .sub-title {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: .8rem 1rem;
+    font-size: .9rem;
+  }
+  .hero {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
