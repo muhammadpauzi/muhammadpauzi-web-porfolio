@@ -1,7 +1,9 @@
 $backgroundColor: #FFF;
+$backgroundColor2:rgb(253, 253, 253);
 $whiteColor: #FFF;
 $blackColor: #000;
-$textColor: #707070;
+$textColor: #1d1d1d;
+$textGrayColor: #363636;
 $redColor: #ED1E24;
 $grayColor: #EAEAEA;
 $successColor: #09C372;
@@ -39,6 +41,11 @@ img{
     display: block;
 }
 
+P{
+    margin-bottom: 1rem;
+    line-height: 24px;
+    color: $textGrayColor;
+}
 
 .btn{
     display: inline-block;
@@ -50,6 +57,7 @@ img{
     font-size: 1.1rem;
     border-width: 2px;
     border-style: solid;
+    text-align: center;
     outline: none;
     appearance: none;
     border-radius: 3px;
@@ -80,15 +88,41 @@ img{
     }
 }
 
+.btn-gray{
+    background-color: $grayColor;
+    border-color: $grayColor;
+    color: $textColor !important;
+    
+    &:hover{
+        box-shadow: 0 2px 3px rgba($grayColor, .2);
+        border-color: darken($grayColor, 4);
+        background-color: darken($grayColor, 4);
+    }
+}
+
 .title{
+    color: $redColor;
     font-size: 3rem;
     margin-bottom: .8rem;
-    color: $textColor;
+}
+
+.title-md{
+    color: $redColor;
+    font-size: 2rem;
+    margin-bottom: .8rem;
 }
 
 .sub-title{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+}
+
+.line{
+    width: 35px;
+    border: none;
+    height: 2px;
+    background-color: $grayColor;
+    margin-bottom: 2rem;
 }
 
 .navbar{
@@ -131,15 +165,82 @@ img{
 }
 
 .hero{
-    position: relative;
-    padding: 6rem 0;
-    overflow: hidden;
+    background-color: $backgroundColor;
+    
+    .hero-row{
+        padding: 6rem 0;
+        position: relative;
+        overflow: hidden;
 
-    .hero-line{
-        transform: scale(1.01);
-        position: absolute;
-        top: 0;
-        right: 0;
+        .hero-line{
+            transform: scale(1.01);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.about{
+    border: 1px solid $grayColor;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: $backgroundColor2;
+    position: relative;
+}
+
+.my-skills{
+    // border: 1px solid $grayColor;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: $backgroundColor;
+
+    .my-skills-card{
+        border: 1px solid $grayColor;
+        border-radius: 4px;
+        padding: 2rem 2rem;
+        text-align: left;
+
+        .my-skills-card-title{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul{
+            
+            li{
+                list-style-type: circle !important;
+                margin-left: 1rem;
+                font-size: 1rem;
+                margin-bottom: .6rem;
+                color: $textGrayColor;
+            }
+        }
+    }
+}
+
+.my-best-works{
+    border: 1px solid $grayColor;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: $backgroundColor2;
+
+    .my-best-works-card{
+        border: 1px solid $grayColor;
+        border-radius: 4px;
+        padding: 2rem 2rem;
+        text-align: left;
+
+        .my-best-works-card-title{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn{
+            display: block;
+            font-size: .9rem;
+            padding: .7rem 1rem;
+        }
     }
 }
 
